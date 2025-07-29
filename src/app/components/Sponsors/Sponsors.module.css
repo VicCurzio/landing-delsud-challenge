@@ -1,0 +1,124 @@
+.sponsorsSectionContainer {
+    background-color: #FAFAFA;
+    padding: 120px 0 140px 0;
+    text-align: center;
+}
+
+.sponsorsTitle {
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin-bottom: 110px;
+    color: black;
+}
+
+.primaryColor {
+    color: var(--primary-color);
+    font-weight: bolder;
+}
+
+.logosWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4vw;
+    margin: 0 auto;
+}
+
+.logoItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sponsorSvgWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 145px;
+    height: 24px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.sponsorSvgWrapper svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #464646;
+}
+
+.sponsorSvgWrapper:hover {
+    opacity: 1;
+}
+
+.carouselContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.carouselArrow {
+    background: none;
+    border: none;
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    cursor: pointer;
+    padding: 10px;
+}
+
+.carouselArrow:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* --- Media Queries --- */
+
+@media (max-width: 768px) {
+    .sponsorsSectionContainer {
+        padding: 60px 15px;
+    }
+
+    .sponsorsTitle {
+        font-size: 1.8rem;
+        margin-bottom: 40px;
+    }
+
+    .logosWrapper {
+        gap: 30px;
+    }
+
+    .sponsorSvgWrapper {
+        width: 120px;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .sponsorsSectionContainer {
+        padding: 70px 0;
+        margin-top: -1px;
+    }
+
+    .sponsorsTitle {
+        font-size: 1.9rem;
+        margin-bottom: 50px;
+        font-weight: bold;
+    }
+
+    .logosWrapper {
+        display: none;
+    }
+
+    .carouselContainer {
+        display: flex;
+        padding-bottom: 40px;
+    }
+
+    .sponsorSvgWrapper {
+        width: 140px;
+        height: auto;
+    }
+}
